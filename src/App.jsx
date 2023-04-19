@@ -9,10 +9,15 @@ function App() {
   background-color: ${(props)=>props.bg?props.bg:"red"};
   `
 
+  const ButtonExtended = styled(ButtonStyled)`   // here we extended the styles previously used
+    border-radius: 50px;
+  `
+
   return (
     <div className="App">
       <ButtonStyled>Button1</ButtonStyled>
       <ButtonStyled bg="blue">Button2</ButtonStyled>
+      <ButtonExtended>Button extended</ButtonExtended>
     </div>
   )
 }
