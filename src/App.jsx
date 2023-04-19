@@ -12,12 +12,18 @@ function App() {
   const ButtonExtended = styled(ButtonStyled)`   // here we extended the styles previously used
     border-radius: 50px;
   `
+  const ButtonPsuedo = styled(ButtonStyled)`   
+  &:hover{
+    cursor: grabbing;
+  }
+`
 
   return (
     <div className="App">
       <ButtonStyled>Button1</ButtonStyled>
       <ButtonStyled bg="blue">Button2</ButtonStyled>
       <ButtonExtended>Button extended</ButtonExtended>
+      <ButtonPsuedo>Psuedo button</ButtonPsuedo>
     </div>
   )
 }
